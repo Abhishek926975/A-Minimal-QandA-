@@ -1,0 +1,56 @@
+📘 StackIt – A Minimal Q&A Forum Platform
+StackIt is a lightweight, web-based question-and-answer forum platform designed for collaborative learning and structured knowledge sharing. Inspired by platforms like Stack Overflow, StackIt focuses on simplicity, usability, and a clean user experience.
+
+🔧 Features
+✅ Core Functionality
+Ask Questions with:
+
+Title and rich text description
+
+Tagging using multi-select inputs (e.g., React, JWT)
+
+Rich Text Editor with support for:
+
+Bold, Italic, Strikethrough
+
+Bullet points and numbered lists
+
+Emoji and hyperlink insertion
+
+Image upload
+
+Text alignment (Left, Center, Right)
+
+Answering Questions
+
+Users can post answers using the same rich text editor
+
+Only logged-in users can answer
+
+Voting & Accepting
+
+Upvote/downvote functionality
+
+Mark one answer as accepted
+
+🏷 Tagging System
+Tag-based categorization for easy question discovery
+
+🔔 Notification System
+Notification bell for real-time alerts
+
+Alerts for:
+
+Answer received
+
+Comment on your answer
+
+@Mentions
+
+Dropdown of recent notifications
+
+👥 User Roles
+Role	Permissions
+Guest	View all questions and answers
+User	Register, log in, ask/answer questions, vote
+Admin	Moderate content
