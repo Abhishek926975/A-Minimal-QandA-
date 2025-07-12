@@ -1,0 +1,277 @@
+/* Modern Visual Enhancements */
+
+/* Glassmorphism Header */
+header {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid rgba(222, 226, 230, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 102, 204, 0.1);
+}
+
+[data-theme="dark"] header {
+  background: rgba(26, 26, 26, 0.95);
+  border-bottom: 1px solid rgba(73, 80, 87, 0.3);
+}
+
+/* Enhanced Branding */
+.branding h1 {
+  background: linear-gradient(135deg, #0066cc, #4dabf7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 2px 4px rgba(0, 102, 204, 0.1);
+}
+
+/* Modern Navigation */
+.nav-link {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #0066cc, #4dabf7);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link.active::before,
+.nav-link:hover::before {
+  width: 100%;
+}
+
+/* Enhanced Cards */
+.question-list-item, .card {
+  background: linear-gradient(145deg, #ffffff, #f8f9fa);
+  border: 1px solid rgba(222, 226, 230, 0.5);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.question-list-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 102, 204, 0.05), transparent);
+  transition: left 0.5s ease;
+}
+
+.question-list-item:hover::before {
+  left: 100%;
+}
+
+[data-theme="dark"] .question-list-item,
+[data-theme="dark"] .card {
+  background: linear-gradient(145deg, #1a1a1a, #2d3748);
+  border-color: rgba(73, 80, 87, 0.5);
+}
+
+/* Modern Buttons */
+button, .btn {
+  background: linear-gradient(135deg, #0066cc, #4dabf7);
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+button:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* Enhanced Form Inputs */
+input, select, textarea {
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid rgba(222, 226, 230, 0.5);
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  background: rgba(255, 255, 255, 1);
+  border-color: #0066cc;
+  box-shadow: 0 0 20px rgba(0, 102, 204, 0.2);
+  transform: translateY(-2px);
+}
+
+[data-theme="dark"] input,
+[data-theme="dark"] select,
+[data-theme="dark"] textarea {
+  background: rgba(26, 26, 26, 0.9);
+  border-color: rgba(73, 80, 87, 0.5);
+}
+
+/* Modern Tags */
+.tag {
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 102, 204, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.tag::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transition: left 0.3s ease;
+}
+
+.tag:hover::before {
+  left: 100%;
+}
+
+/* Enhanced Notifications */
+.notification-dropdown {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(222, 226, 230, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.notification-item.unread {
+  background: linear-gradient(90deg, rgba(0, 102, 204, 0.05), rgba(0, 102, 204, 0.02));
+  border-left: 3px solid #0066cc;
+  position: relative;
+}
+
+.notification-item.unread::before {
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  background: #0066cc;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  animation: pulse 2s infinite;
+}
+
+/* Avatar Enhancements */
+.avatar-container {
+  position: relative;
+}
+
+.avatar {
+  box-shadow: 0 4px 15px rgba(0, 102, 204, 0.2);
+  transition: all 0.3s ease;
+}
+
+.avatar:hover {
+  box-shadow: 0 8px 25px rgba(0, 102, 204, 0.3);
+  transform: scale(1.1);
+}
+
+/* Theme Toggle Enhancement */
+.theme-toggle-btn {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+  transform: rotate(180deg) scale(1.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Pagination Enhancement */
+.page-btn {
+  background: linear-gradient(135deg, #ffffff, #f8f9fa);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.page-btn:hover {
+  background: linear-gradient(135deg, #0066cc, #4dabf7);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 102, 204, 0.3);
+}
+
+/* Animations */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.question-list-item {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(248, 249, 250, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #0066cc, #4dabf7);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #0052a3, #339af0);
+}
+
+/* Loading States */
+.loading {
+  position: relative;
+  overflow: hidden;
+}
+
+.loading::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
