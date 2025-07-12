@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StackIt - Q&A Platform</title>
+  <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet" />
+  <link rel="stylesheet" href="odoo.css" />
+  <link rel="stylesheet" href="dynamic.css" />
+  <link rel="stylesheet" href="theme-toggle.css" />
+  <link rel="stylesheet" href="modern.css" />
+  <link rel="stylesheet" href="responsive.css" />
+  <link rel="stylesheet" href="professional.css" />
+</head>
+<body>
+  <header>
+    <div class="branding">
+      <h1><a href="#home">StackIt</a></h1>
+    </div>
+    <nav>
+      <a href="#home" id="navHome" class="nav-link active">Home</a>
+      <a href="#ask" id="navAsk" class="nav-link">Ask Question</a>
+      <a href="#answer" id="navAnswer" class="nav-link">Answer Questions</a>
+      <a href="#help" id="navHelp" class="nav-link">Help</a>
+      <a href="#login" id="navLogin" class="nav-link">Login</a>
+    </nav>
+    <div class="header-right">
+      <button id="themeToggle" class="theme-toggle-btn">🌙</button>
+      <button id="notificationBtn" class="notification-btn">🔔 <span id="notificationCount" class="badge"></span></button>
+      <div class="user-menu">
+        <div class="avatar-container">
+          <div class="avatar blank-avatar" id="userAvatar">👤</div>
+          <input type="file" id="avatarUpload" accept="image/*" style="display: none;" />
+        </div>
+        <span id="userName">Guest</span>
+      </div>
+    </div>
+  </header>
+
+  <main id="app"></main>
+
+  <div id="notificationDropdown" class="notification-dropdown hidden">
+    <h4>Notifications</h4>
+    <ul id="notificationList"></ul>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
+  <script src="stackit.js"></script>
+  <script src="theme-toggle.js"></script>
+</body>
+</html>
